@@ -4,3 +4,4 @@ argument_specs:
     author: Mikhail Oznobikhin
 dependencies:
  - deploy
+allow_dublicates: true
