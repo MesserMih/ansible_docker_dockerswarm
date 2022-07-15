@@ -1,4 +1,4 @@
---- 
+---
 - name: Установка Docker
   block:
     - name: Добавляем universe
