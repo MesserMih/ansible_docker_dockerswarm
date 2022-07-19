@@ -4,15 +4,15 @@
 
 - name: "[{{ name }}] Выкладка сервиса"
   block:
-  - name: "[{{ name }}] Выкладываем сервис"
-    community.docker.docker_swarm_service:
-      name: "{{ name }}"
-      image: "{{ registry_name }}{{ name }}:{{ version }}"
-      state: present
-      force_update: true
-      networks:
-        - name: "{{ network_name }}"
-      secrets:
-        - secret_name: "{{ name }}.env"
-          filename: "/opt/app/.env"
+    - name: "[{{ name }}] Выкладываем сервис"
+      community.docker.docker_swarm_service:
+        name: "{{ name }}"
+        image: "{{ registry_name }}{{ name }}:{{ version }}"
+        state: present
+        force_update: true
+        networks:
+          - name: "{{ network_name }}"
+        secrets:
+          - secret_name: "{{ name }}.env"
+            filename: "/opt/app/.env"
   tags: "{{ name }}"
