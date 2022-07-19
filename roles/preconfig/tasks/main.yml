@@ -13,6 +13,7 @@
           - curl
           - gnupg
           - lsb-release
+          - python3-pip
         update_cache: true
         cache_valid_time: 86400
 
@@ -68,6 +69,12 @@
         dest: /usr/local/bin/docker-compose
         mode: 0755
   become: true
+
+- name: Настройка дополнительных пакетов python
+  block:
+    - name: Установка pip пакетов
+      ansible.builtin.pip:
+        name: docker
 
 - name: Завершение установки
   block:

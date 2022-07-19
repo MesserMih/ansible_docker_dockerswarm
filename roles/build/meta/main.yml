@@ -1,6 +1,6 @@
 galaxy_info:
-  role_name: preconfig
-  description: Натройка серверов для работы Docker
+  role_name: build
+  description: Сборка монорепозитория
   author: Mikhail Oznobikhin
   license: MIT
   min_ansible_version: 2.9
