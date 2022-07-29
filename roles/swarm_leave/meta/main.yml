@@ -1,10 +1,10 @@
 galaxy_info:
-  role_name: swarm_leave
-  description: Удаление ноды из swarm
-  author: Mikhail Oznobikhin
-  license: MIT
-  min_ansible_version: 2.9
+  role_name: "swarm_leave"
+  description: "Удаление ноды из swarm"
+  author: "Mikhail Oznobikhin"
+  license: "MIT"
+  min_ansible_version: "2.9"
   platforms:
-    - name: Ubuntu
+    - name: "Ubuntu"
       versions:
         - all

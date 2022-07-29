@@ -1,10 +1,10 @@
 galaxy_info:
-  role_name: preconfig
-  description: Натройка серверов для работы Docker
-  author: Mikhail Oznobikhin
-  license: MIT
-  min_ansible_version: 2.9
+  role_name: "preconfig"
+  description: "Настройка серверов для работы Docker и запуск Node exporter"
+  author: "Mikhail Oznobikhin"
+  license: "MIT"
+  min_ansible_version: "2.9"
   platforms:
-    - name: Ubuntu
+    - name: "Ubuntu"
       versions:
         - all
